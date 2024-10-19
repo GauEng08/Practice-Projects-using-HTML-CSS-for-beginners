@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.4;
+}
+header{
+    height: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Nav Bar */
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+.nav_container .logo{
+    margin-top: 15px;
+    font-weight:600;
+    font-size: 32px;
+    color:orange;
+}
+.nav_container ul li{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: orangered;
+    border-bottom: 2px solid transparent;
+}
+.nav_container ul li:hover{
+       border-bottom: 2px solid orangered;
+}
+/* Contact */
+.contact_section{
+    background-color:yellow;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.contact_section .container h1{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: green;
+}
+.contact_section .container input{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+}
+.contact_section .container .button{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+.contact_section .container .button:hover{
+    background-color: yellowgreen;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+/* Footer */
+.footer_container{
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    padding: 20px;
+}
+.footer_container .footer_logo{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 32px;
+} 
+.footer_container .link_list{
+    margin-top: 50px;
+    gap: 20px;
+}
+.footer_container .link_list h3{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 20px;
+}
+.link_list .icon_container{
+    display: flex;
+    justify-content:space-between ;
+    gap: 20px;
+}

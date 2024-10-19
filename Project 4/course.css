@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: "Oswald",sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+    font-weight: 400;   
+}
+header{
+    height: 100px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color:lightblue;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    color: darkslateblue;
+    padding: 20px;
+    gap: 20px;
+}
+.nav_container .logo{
+    font-weight: 600;
+    font-size: 32px;
+}
+.nav_container ul li{
+    font-weight: 400px;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+}
+.nav_container ul li:hover{
+    border-bottom:2px solid blue;
+    transition: 0.2s ease-in-out;
+}
+.nav_container .input_container input{
+    padding: 10px;
+}
+.nav_container .input_container .button{
+    background-color:blue;
+    color: white;
+}
+.nav_container .input_container .button:hover{
+    background-color: skyblue;
+    color:black;
+    transition: 0.2s ease-in-out;
+}
+/* Course Section */
+.course_section{
+    display: flex;
+    height: 500px;
+    background-color:lightgreen;
+}
+.course_section .courses{
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.course_section img{
+    width: 200px;
+    height: 200px;
+}
+/* Footer section */
+.footer_section{
+    background-color:#03254c;
+    color: white;
+    height: 400px;
+}
+.footer_section .footer_upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 25px;
+}
+.footer_section .footer_upper .link_list{
+        margin-top: 70px;
+}
+.footer_lower{
+  background-color:#1167b1 ;
+  text-align: center;
+}
+.footer_lower .footer_content h3{
+   font-weight: 400;
+   font-size: 15px;
+}

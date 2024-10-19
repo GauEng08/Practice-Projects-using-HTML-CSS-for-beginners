@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: "Oswald",sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+    font-weight: 400;   
+}
+header{
+    height: 100px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color:lightblue;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    color: darkslateblue;
+    padding: 20px;
+    gap: 20px;
+}
+.nav_container .logo{
+    font-weight: 600;
+    font-size: 32px;
+}
+.nav_container ul li{
+    font-weight: 400px;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+}
+.nav_container ul li:hover{
+    border-bottom:2px solid blue;
+    transition: 0.2s ease-in-out;
+}
+.nav_container .input_container input{
+    padding: 10px;
+}
+.nav_container .input_container .button{
+    background-color:blue;
+    color: white;
+}
+.nav_container .input_container .button:hover{
+    background-color: skyblue;
+    color:black;
+    transition: 0.2s ease-in-out;
+}
+/* Home Section */
+.home_section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.home_section .home_content h1{
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 100px;
+}
+ .home_button button{
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 100px;
+    background-color:green;
+    color: white;
+}
+.home_button button:hover{
+    background-color:yellowgreen;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+/* Footer Section */
+.footer_section{
+    background-color:#03254c;
+    color: white;
+    height: 400px;
+}
+.footer_section .footer_upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 25px;
+}
+.footer_section .footer_upper .link_list{
+        margin-top: 70px;
+}
+.footer_lower{
+  background-color:#1167b1 ;
+  text-align: center;
+}
+.footer_lower .footer_content h3{
+   font-weight: 400;
+   font-size: 15px;
+}

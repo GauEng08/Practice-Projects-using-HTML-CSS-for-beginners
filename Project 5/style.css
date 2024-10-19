@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.4;
+}
+header{
+    height: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color:#2222;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Nav Bar */
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+.nav_container .logo{
+    margin-top: 15px;
+    font-weight:600;
+    font-size: 32px;
+    color:orange;
+}
+.nav_container ul li{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: orangered;
+    border-bottom: 2px solid transparent;
+}
+.nav_container ul li:hover{
+       border-bottom: 2px solid orangered;
+}
+
+/* Home Section */
+.home_section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+.home_content{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.home_section .home_content h1{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+.home_section .home_content p{
+    color: white;
+    font-weight: 400px;
+}
+.home_section .shop_button{
+    margin-bottom: 500px;
+    margin-top: 30px;
+}
+.shop_button button{
+    padding: 15px;
+    width: 100px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+.shop_button button:hover{
+    background-color: yellowgreen;
+    transition: 0.2s ease-in-out;
+    color: black;
+}
+
+/* Footer */
+.footer_container{
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    padding: 20px;
+}
+.footer_container .footer_logo{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 32px;
+} 
+.footer_container .link_list{
+    margin-top: 50px;
+    gap: 20px;
+}
+.footer_container .link_list h3{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 20px;
+}
+.link_list .icon_container{
+    display: flex;
+    justify-content:space-between ;
+    gap: 20px;
+}
